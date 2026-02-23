@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corazón a Corazón - Conóceme</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="floating-hearts" id="hearts-container"></div>
+  
+  <main class="container">
+    <header>
+      <h1>Corazón a Corazón</h1>
+      <p class="subtitle">Un viaje para descubrir quién eres realmente...</p>
+    </header>
+
+    <div id="quiz-container" class="card">
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      
+      <div id="question-content">
+        <h2 id="question-text">¿Cargando preguntas con amor...?</h2>
+        <div id="options-container">
+          <!-- Las opciones se cargarán aquí -->
+        </div>
+        <div id="input-container" class="hidden">
+          <input type="text" id="text-answer" placeholder="Escribe tu respuesta aquí...">
+          <button id="next-btn" class="btn-primary">Continuar</button>
+        </div>
+      </div>
+
+      <div id="result-screen" class="hidden">
+        <h2>¡Gracias por compartir tu corazón!</h2>
+        <p>He guardado cada una de tus palabras como un tesoro.</p>
+        <div id="summary"></div>
+        <button onclick="location.reload()" class="btn-secondary">Empezar de nuevo</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
