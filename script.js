@@ -172,6 +172,205 @@ const questions = [
   {
     question: "¿Cuál es tu filosofía de vida en una frase?",
     type: "text"
+  },
+  {
+    question: "¿Qué es lo más loco que has hecho por amor?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor talento oculto?",
+    type: "text"
+  },
+  {
+    question: "¿Si pudieras hablar con tu 'yo' del pasado, qué le dirías?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es el mejor regalo que has recibido?",
+    type: "text"
+  },
+  {
+    question: "¿Qué olor te transporta a un momento especial?",
+    type: "text"
+  },
+  {
+    question: "¿Preferirías viajar al futuro o al pasado?",
+    type: "options",
+    options: ["Futuro tecnológico", "Pasado histórico", "Me quedo en el presente"]
+  },
+  {
+    question: "¿Cuál es tu mayor arrepentimiento, si tienes alguno?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te hace sentir vivo/a?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu placer culposo favorito?",
+    type: "text"
+  },
+  {
+    question: "¿Si tuvieras que vivir en otro planeta, cuál elegirías?",
+    type: "options",
+    options: ["Marte", "La Luna", "Un planeta de otra galaxia"]
+  },
+  {
+    question: "¿Qué es lo primero que harías si ganaras la lotería?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu serie favorita de todos los tiempos?",
+    type: "text"
+  },
+  {
+    question: "¿Qué cualidad física te gusta más de ti?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo te gustaría que fuera tu casa ideal?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo más extraño que has comido?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor fobia?",
+    type: "text"
+  },
+  {
+    question: "¿Qué canción te hace bailar sin importar dónde estés?",
+    type: "text"
+  },
+  {
+    question: "¿Si pudieras ser otra persona por un día, quién serías?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo más importante que has aprendido este año?",
+    type: "text"
+  },
+  {
+    question: "¿Prefieres el dulce o lo salado?",
+    type: "options",
+    options: ["Dulce siempre", "Salado", "Agridulce", "Depende del antojo"]
+  },
+  {
+    question: "¿Cuál es tu lugar favorito para pensar?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te molesta de la gente?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu juego de mesa o videojuego favorito?",
+    type: "text"
+  },
+  {
+    question: "¿Qué harías si tuvieras 24 horas de vida?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor inspiración artística?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo defines el éxito personal?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor desafío actual?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de tu personalidad?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu tradición familiar favorita?",
+    type: "text"
+  },
+  {
+    question: "¿Si pudieras inventar algo, qué sería?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te emociona del futuro?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu frase motivadora favorita?",
+    type: "text"
+  },
+  {
+    question: "¿Qué harías si fueras invisible por un día?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor descubrimiento personal?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de tu ciudad?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo te gustaría que fuera tu vejez?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu superhéroe o superheroína favorita?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de la tecnología?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor logro académico o profesional?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de la naturaleza?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo describirías tu estilo de vestir?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor deseo para el mundo?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de las redes sociales?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor fuente de felicidad?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de tu trabajo o estudios?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor lección aprendida de un error?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de la música?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor sueño para tu familia?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te gusta de la vida?",
+    type: "text"
   }
 ];
 
