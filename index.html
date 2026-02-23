@@ -14,6 +14,13 @@
   
   <main class="container">
     <header>
+      <div id="auth-status" class="auth-bar">
+        <button id="login-btn" class="btn-auth">Iniciar Sesión con Google</button>
+        <div id="user-info" class="hidden">
+          <span id="user-name"></span>
+          <button id="logout-btn" class="btn-auth-small">Cerrar Sesión</button>
+        </div>
+      </div>
       <h1>Corazón a Corazón</h1>
       <p class="subtitle">Un viaje para descubrir quién eres realmente...</p>
     </header>
@@ -43,6 +50,6 @@
     </div>
   </main>
 
-  <script src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>

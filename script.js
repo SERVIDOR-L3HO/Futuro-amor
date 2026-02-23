@@ -1,3 +1,62 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { 
+    getAuth, 
+    GoogleAuthProvider, 
+    signInWithPopup, 
+    signOut, 
+    onAuthStateChanged 
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+import { getStorage } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB-EXAMPLE-KEY", // Replace with your actual API key
+  authDomain: "ligamx-daf3d.firebaseapp.com",
+  projectId: "ligamx-daf3d",
+  storageBucket: "ligamx-daf3d.appspot.com", 
+  messagingSenderId: "437421248316",
+  appId: "1:437421248316:web:38e9f436a57389d2c49839",
+  measurementId: "G-LKVTFN2463",
+  databaseURL: "https://ligamx-daf3d-default-rtdb.firebaseio.com/"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+const storage = getStorage(app);
+const rtdb = getDatabase(app);
+const provider = new GoogleAuthProvider();
+
+// Auth Elements
+const loginBtn = document.getElementById('login-btn');
+const logoutBtn = document.getElementById('logout-btn');
+const userInfo = document.getElementById('user-info');
+const userName = document.getElementById('user-name');
+
+// Auth Logic
+loginBtn.onclick = () => {
+  signInWithPopup(auth, provider).catch(error => console.error(error));
+};
+
+logoutBtn.onclick = () => {
+  signOut(auth).catch(error => console.error(error));
+};
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    loginBtn.classList.add('hidden');
+    userInfo.classList.remove('hidden');
+    userName.innerText = `Hola, ${user.displayName}`;
+    questionContent.classList.remove('hidden');
+  } else {
+    loginBtn.classList.remove('hidden');
+    userInfo.classList.add('hidden');
+    questionContent.classList.add('hidden');
+  }
+});
+
 const questions = [
   // ... (10 preguntas anteriores)
   {
