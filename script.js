@@ -1,4 +1,5 @@
 const questions = [
+  // ... (10 preguntas anteriores)
   {
     question: "¿Cuál es tu recuerdo más feliz de la infancia?",
     type: "text"
@@ -43,6 +44,134 @@ const questions = [
     question: "¿Crees en el amor a primera vista?",
     type: "options",
     options: ["Totalmente", "Es complicado", "No, el amor se construye", "Solo en las películas"]
+  },
+  // --- NUEVAS PREGUNTAS ---
+  {
+    question: "¿Qué es lo más valiente que has hecho en tu vida?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor miedo irracional?",
+    type: "text"
+  },
+  {
+    question: "¿Qué superpoder elegirías tener por un día?",
+    type: "options",
+    options: ["Volar", "Invisibilidad", "Telepatía", "Control del tiempo"]
+  },
+  {
+    question: "¿Cuál es tu libro o película favorita y cómo te cambió?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es algo que la mayoría de la gente no sabe de ti?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo manejas el estrés en un día difícil?",
+    type: "options",
+    options: ["Haciendo ejercicio", "Durmiendo", "Escuchando música", "Hablando con alguien"]
+  },
+  {
+    question: "¿Cuál sería tu trabajo ideal si el dinero no importara?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te hace reír?",
+    type: "text"
+  },
+  {
+    question: "¿Eres más de mañana o de noche?",
+    type: "options",
+    options: ["Madrugador/a", "Búho nocturno", "Depende del día"]
+  },
+  {
+    question: "¿Cuál es el mejor consejo que has recibido jamás?",
+    type: "text"
+  },
+  {
+    question: "¿Qué te apasiona tanto que podrías hablar de ello por horas?",
+    type: "text"
+  },
+  {
+    question: "¿Prefieres la ciudad, el campo o la playa?",
+    type: "options",
+    options: ["Ciudad vibrante", "Campo tranquilo", "Playa relajante", "Montaña aventurera"]
+  },
+  {
+    question: "¿Qué es lo que más agradeces hoy?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo te gustaría ser recordado/a?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu comida favorita de todos los tiempos?",
+    type: "text"
+  },
+  {
+    question: "¿Prefieres leer el libro o ver la película?",
+    type: "options",
+    options: ["Libro siempre", "Película", "Ambos", "Ninguno"]
+  },
+  {
+    question: "¿Qué habilidad nueva te gustaría aprender?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor orgullo?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más te atrae intelectualmente de alguien?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo describirías tu fin de semana perfecto?",
+    type: "text"
+  },
+  {
+    question: "¿Prefieres el café o el té?",
+    type: "options",
+    options: ["Café cargado", "Té relajante", "Chocolate caliente", "Agua"]
+  },
+  {
+    question: "¿Cuál es el viaje más increíble que has hecho?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es algo que te hace sentir nostalgia?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo te enfrentas a los cambios inesperados?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu estación del año favorita?",
+    type: "options",
+    options: ["Primavera", "Verano", "Otoño", "Invierno"]
+  },
+  {
+    question: "¿Qué es lo que más te inspira a diario?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu mayor meta para este año?",
+    type: "text"
+  },
+  {
+    question: "¿Qué es lo que más valoras de tu familia?",
+    type: "text"
+  },
+  {
+    question: "¿Cómo te relajas después de una semana larga?",
+    type: "text"
+  },
+  {
+    question: "¿Cuál es tu filosofía de vida en una frase?",
+    type: "text"
   }
 ];
 
