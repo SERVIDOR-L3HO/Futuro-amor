@@ -25,7 +25,7 @@
       <p class="subtitle">Un viaje para descubrir quién eres realmente...</p>
     </header>
 
-    <div id="quiz-container" class="card">
+    <div id="quiz-container" class="card hidden">
       <div id="progress-bar-container">
         <div id="progress-bar"></div>
       </div>
@@ -46,6 +46,16 @@
         <p>He guardado cada una de tus palabras como un tesoro.</p>
         <div id="summary"></div>
         <button onclick="location.reload()" class="btn-secondary">Empezar de nuevo</button>
+      </div>
+    </div>
+
+    <!-- Pantalla de Bienvenida/Login -->
+    <div id="login-screen" class="card">
+      <div class="login-content">
+        <i class="heart-icon">❤️</i>
+        <h2>Bienvenido a Corazón a Corazón</h2>
+        <p>Para comenzar este viaje especial, por favor inicia sesión.</p>
+        <button id="main-login-btn" class="btn-primary">Iniciar Sesión con Google</button>
       </div>
     </div>
   </main>

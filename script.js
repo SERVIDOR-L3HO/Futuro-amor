@@ -31,14 +31,20 @@ const provider = new GoogleAuthProvider();
 
 // Auth Elements
 const loginBtn = document.getElementById('login-btn');
+const mainLoginBtn = document.getElementById('main-login-btn');
 const logoutBtn = document.getElementById('logout-btn');
 const userInfo = document.getElementById('user-info');
 const userName = document.getElementById('user-name');
+const loginScreen = document.getElementById('login-screen');
+const quizContainer = document.getElementById('quiz-container');
 
 // Auth Logic
-loginBtn.onclick = () => {
+const handleLogin = () => {
   signInWithPopup(auth, provider).catch(error => console.error(error));
 };
+
+loginBtn.onclick = handleLogin;
+if (mainLoginBtn) mainLoginBtn.onclick = handleLogin;
 
 logoutBtn.onclick = () => {
   signOut(auth).catch(error => console.error(error));
@@ -47,12 +53,24 @@ logoutBtn.onclick = () => {
 onAuthStateChanged(auth, (user) => {
   if (user) {
     loginBtn.classList.add('hidden');
+    if (loginScreen) loginScreen.classList.add('hidden');
+    
     userInfo.classList.remove('hidden');
     userName.innerText = `Hola, ${user.displayName}`;
+    
+    quizContainer.classList.remove('hidden');
     questionContent.classList.remove('hidden');
+    
+    // Si es la primera vez que se carga con el usuario, inicializar corazones si no están
+    if (document.querySelectorAll('.heart').length === 0) {
+      createHearts();
+    }
   } else {
     loginBtn.classList.remove('hidden');
+    if (loginScreen) loginScreen.classList.remove('hidden');
+    
     userInfo.classList.add('hidden');
+    quizContainer.classList.add('hidden');
     questionContent.classList.add('hidden');
   }
 });
@@ -448,7 +466,6 @@ const summary = document.getElementById('summary');
 
 function init() {
   showQuestion();
-  createHearts();
 }
 
 function showQuestion() {
